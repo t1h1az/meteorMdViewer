@@ -13,7 +13,7 @@ class Header extends Component {
           <li>
             <a>Create bin</a>
           </li>
-s        </ul>
+        </ul>
       </nav>
     );
   }
