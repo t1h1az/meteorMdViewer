@@ -33,3 +33,6 @@ you can access the current user in every method with this.userId.
 
 
 ## function vs. arrow function
+
+
+##Data manipulation methods have to be imported in both client and server main.js-files
