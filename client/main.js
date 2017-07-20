@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from  './components/app';
+import BinsList from './components/bins/binsList';
 import {Bins} from '../imports/collections/bins';
+
 
 const routes = (
   <Router history={browserHistory}>

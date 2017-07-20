@@ -39,6 +39,7 @@ class BinsList extends Component {
     );
   }
 }
+
 export default createContainer(() => {
   Meteor.subscribe('bins');
   return { bins: Bins.find({}).fetch()}
