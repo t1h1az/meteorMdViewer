@@ -8,7 +8,6 @@ export default () => {
     <div>
       <Header />
       <BinsList />
-      markbin
     </div>
   );
 };
