@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+
+class Header extends Component {
+  render() {
+    return (
+      <nav className="nav navbar-default">
+        <div className="navbar-header">
+          <a className="navbar-brand">Markbin</a>
+        </div>
+        <ul className="nav navbar-nav">
+          <li>
+          </li>
+          <li>
+            <a>Create bin</a>
+          </li>
+s        </ul>
+      </nav>
+    );
+  }
+}
+
+export default Header;
