@@ -16,5 +16,20 @@
   meteor add twbs:bootstrap@3.3.6
 ```
 
+```
+  meteor remove insecure
+```
+
 # Building process
-1. create main.html with container for div
+1.  create main.html with container for div
+2.  Meteor method are defined early in the app building process,
+    all needed, CRUD methods from the beginning
+
+
+
+## Access user
+
+you can access the current user in every method with this.userId.
+
+
+## function vs. arrow function
