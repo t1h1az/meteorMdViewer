@@ -20,6 +20,10 @@
   meteor remove insecure
 ```
 
+```
+  meteor remove autopublish
+```
+
 # Building process
 1.  create main.html with container for div
 2.  Meteor method are defined early in the app building process,
