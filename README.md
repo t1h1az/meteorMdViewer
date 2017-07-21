@@ -5,15 +5,12 @@ to install follow instructions
 ## Install dependencies
 
 ```
-  meteor create projectName
-```
 
-```
-  meteor add react-meteor-data
-```
+  > meteor create projectName
 
-```
-  npm i --save react react-dom react-addons-pure-render-mixin
+  > meteor add react-meteor-data
+
+  > npm i --save react react-dom react-addons-pure-render-mixin
 ```
 
 ### Add bootstrap to meteor for quick prototyping
@@ -45,3 +42,7 @@ you can access the current user in every method with this.userId.
 
 
 ##Data manipulation methods have to be imported in both client and server main.js-files
+
+
+
+## Styling
