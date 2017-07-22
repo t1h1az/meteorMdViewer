@@ -46,3 +46,15 @@ you can access the current user in every method with this.userId.
 
 
 ## Styling
+
+```
+
+  > meteor add sgslo:cmstyle
+```
+
+
+
+## Get variable from INPUT Element
+---
+
+This works with refs inside the component. Add property ref not refs to input tag und assign a string value. After that you can catch the value with this.refs.email.value

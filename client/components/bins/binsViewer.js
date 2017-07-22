@@ -3,6 +3,7 @@ import {createContainer} from 'meteor/react-meteor-data';
 import {Bins} from '../../../imports/collections/bins';
 import BinsEditor from './binsEditor';
 import BinsOutput from './binsOutput';
+import BinsFooter from './binsFooter';
 
 class BinsViewer extends Component{
   render() {
@@ -17,7 +18,8 @@ class BinsViewer extends Component{
     return (
       <div>
         <BinsEditor bin={this.props.bin} />
-        <BinsOutput bin={this.props.bin}/>
+        <BinsOutput bin={this.props.bin} />
+        <BinsFooter bin={this.props.bin} />
       </div>
     );
   }
