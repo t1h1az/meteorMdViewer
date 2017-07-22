@@ -12,6 +12,7 @@ class BinsEditor extends Component {
       <div className="col-xs-8">
         <h5>Input markdown</h5>
         <CodeMirror
+          value={this.props. bin.content}
           options={{mode: 'markdown', lineNumbers: true}}
           onChange={this.onEditorChange.bind(this)} />
       </div>

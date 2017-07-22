@@ -2,13 +2,22 @@ import React, { Component } from 'react';
 import {createContainer} from 'meteor/react-meteor-data';
 import {Bins} from '../../../imports/collections/bins';
 import BinsEditor from './binsEditor';
+import BinsOutput from './binsOutput';
 
 class BinsViewer extends Component{
   render() {
+    //bin is found after the BinsEditor call
+    //therefore the editor is always empty
+    //if check
+    if (!this.props.bin) {
+      //good place for spinner component, splash screen
+      return <div>Loading...</div>;
+    }
   //  console.log(this.props.params.binId);
     return (
       <div>
         <BinsEditor bin={this.props.bin} />
+        <BinsOutput bin={this.props.bin}/>
       </div>
     );
   }
