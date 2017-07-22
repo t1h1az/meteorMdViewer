@@ -7,7 +7,7 @@ class BinsOutput extends Component {
     return (
       <div className="col-xs-4">
         <h5>Output</h5>
-        <div dangerouslySetInnerHTML={{ __html: rawHTML}}></div>
+        <div dangerouslySetInnerHTML={{ __html: rawHTML}}></div> // susceptible for js xxs injection
       </div>
     );
   }
