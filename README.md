@@ -6,42 +6,25 @@ to install follow instructions
 
 ```
 
-  > meteor create projectName
+ $ meteor create projectName
 
-  > meteor add react-meteor-data
+ $ meteor add react-meteor-data
 
-  > npm i --save react react-dom react-addons-pure-render-mixin
+ $ npm i --save react react-dom react-addons-pure-render-mixin
 ```
 
-### Add bootstrap to meteor for quick prototyping
+### Add bootstrap to meteor 
 ```
-  meteor add twbs:bootstrap@3.3.6
-```
-
-```
-  meteor remove insecure
+ $ meteor add twbs:bootstrap@3.3.6
 ```
 
 ```
-  meteor remove autopublish
+ $ meteor remove insecure
 ```
 
-# Building process
-1.  create main.html with container for div
-2.  Meteor method are defined early in the app building process,
-    all needed, CRUD methods from the beginning
-
-
-
-## Access user
-
-you can access the current user in every method with this.userId.
-
-
-## function vs. arrow function
-
-
-##Data manipulation methods have to be imported in both client and server main.js-files
+```
+ $ meteor remove autopublish
+```
 
 
 
@@ -49,12 +32,9 @@ you can access the current user in every method with this.userId.
 
 ```
 
-  > meteor add sgslo:cmstyle
+  $ meteor add sgslo:cmstyle
 ```
 
 
 
-## Get variable from INPUT Element
----
 
-This works with refs inside the component. Add property ref not refs to input tag und assign a string value. After that you can catch the value with this.refs.email.value
