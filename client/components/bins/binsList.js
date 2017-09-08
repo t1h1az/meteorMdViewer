@@ -11,24 +11,28 @@ class BinsList extends Component {
   renderList() {
     return this.props.bins.map(bin => {
       const url = `/bins/${bin._id}`;
+      links = <Link to={url}>Bin {bin._id}</Link>;
 
       return (
-        <li
-          className="list-group-item"
-          key={bin._id}>
-          <Link to={url}>Bin {bin._id}</Link>
-          <span className="pull-right">
-            <button
-              className="btn btn-success">
-              View
-            </button>
-            <button
-              className="btn btn-danger"
-              onClick={() => this.onBinRemove(bin)}>
-              Remove
-            </button>
-          </span>
-        </li>
+        <div className="col-xs-9 pull-right">
+          <li
+            className="list-group-item"
+            key={bin._id}>
+            {links}
+            <span className="pull-right">
+              <Link
+                to={url}
+                className="btn btn-success">
+                View
+              </Link>
+              <button
+                className="btn btn-danger"
+                onClick={() => this.onBinRemove(bin)}>
+                Remove
+              </button>
+            </span>
+          </li>
+        </div>
       );
     });
   }

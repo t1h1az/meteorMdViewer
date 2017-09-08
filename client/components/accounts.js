@@ -14,7 +14,7 @@ class Accounts extends Component {
   }
 
   render() {
-    return <div ref="container"></div>;
+    return <div ref="container" className="login-modal"></div>;
   }
 }
 

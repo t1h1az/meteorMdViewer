@@ -16,7 +16,7 @@ class BinsViewer extends Component{
     }
   //  console.log(this.props.params.binId);
     return (
-      <div>
+     <div className="col-xs-9 pull-right">
         <BinsEditor bin={this.props.bin} />
         <BinsOutput bin={this.props.bin} />
         <BinsFooter bin={this.props.bin} />

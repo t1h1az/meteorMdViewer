@@ -13,19 +13,19 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="nav navbar-default">
-        <div className="navbar-header">
-          <Link to="/" className="navbar-brand">Markbin</Link>
-        </div>
-        <ul className="nav navbar-nav">
-          <li>
-            <Accounts />
-          </li>
-          <li>
-            <a href="#" onClick={this.onBinClick.bind(this)}>Create bin</a>
-          </li>
-        </ul>
-      </nav>
+        <nav className="nav navbar-inverse">
+          <div className="navbar-header">
+            <Link to="/" className="navbar-brand">Markbin</Link>
+          </div>
+          <ul className="nav navbar-nav pull-right">
+            <li>
+              <a href="#" onClick={this.onBinClick.bind(this)}>Create bin</a>
+            </li>
+            <li>
+              <Accounts />
+            </li>
+          </ul>
+        </nav>
     );
   }
 }
